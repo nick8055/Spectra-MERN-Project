@@ -1,0 +1,106 @@
+/* *{
+    outline: red solid 1px;
+} */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width : 300px;
+    background-color: white;
+    transition: left 0.6s ease;
+    z-index: 10;
+    border-right: 0.1px solid rgb(206, 206, 206);
+    overflow-y: auto;
+}
+
+.sidebar.open{
+    left: 0px;
+}
+
+.toggleButton{
+    position: fixed;
+    top: 30px;
+    height: 40px;
+    left: 0px;
+    transition: left 0.6s ease;
+    background-color: white;
+    border-style: none;
+    font-size: 30px;
+    color: #3b3b3b;
+}
+
+.toggleButton.open{
+    left:302px;
+}
+
+.sidebar-logo{
+    width:80%;
+    margin-left: 10%;
+    background-color: white;
+}
+
+.sidebar-link-container{
+    background-color: white;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 100px;
+}
+
+.sidebar-link{
+    background-color: white;
+    font-size: 18px;
+    padding-bottom: 40px;
+    color: #3b3b3b;
+    font-weight:normal;
+    text-decoration: none;
+}
+
+.sidebar-link a{
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link a:hover{
+    color: rgb(175, 2, 2);
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar-link a:active{
+    color: rgb(175, 2, 2);
+    transition: all 0.3s ease;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .sidebar{
+        left: -190px;
+        width : 190px;
+        transition: left 0.6s ease;
+    }
+
+    .toggleButton.open{
+        left: 192px;
+    }
+
+    .sidebar-link{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .sidebar-link a:hover{
+        font-size: 17px;
+    }
+    
+    .sidebar-link a:active{
+        font-size: 17px;
+    }
+
+}

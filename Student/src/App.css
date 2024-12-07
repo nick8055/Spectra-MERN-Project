@@ -1,0 +1,211 @@
+body
+{
+  background-color: #f8f9fa;
+}
+
+.page-title
+{
+  width: 90%;
+  margin-left: 5%;
+  text-align: left;
+  font-weight: lighter;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-bottom: 0;
+  color : #343a40;
+  margin-top: 150px;
+  font-size: 40px;
+}
+
+.page-title-border-container
+{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.page-title-border 
+{
+  height: 4px;
+  width: 70px;
+  background: #ce2029;
+  display: block;
+}
+
+
+.form-container
+{
+  width: 50%;
+  margin-left: 25%;
+  border-bottom: 1px solid rgba(72, 94, 144, 0.16);
+  box-shadow: 0px 0px 5px 0px rgb(71 95 123 / 50%);
+  font-family: "IBM Plex Sans", sans-serif;
+  color : #343a40;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.form-title
+{
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  width: 60%;
+  margin-left: 20%;
+
+}
+
+.label
+{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.input
+{
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  height: 30px;
+}
+
+.custom-file-upload 
+{
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.form-button
+{
+  margin-top: 50px;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  border-style: none;
+  background-color: #343a40;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button:hover
+{
+  background-color: rgb(175, 2, 2);
+  transition: all 0.3s ease;
+}
+
+.item-list
+{
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.link
+{
+  text-decoration: none;
+  color: #0052cc;
+  transition: all 0.3s ease;
+  
+}
+
+.link:hover
+{
+  color: rgb(175, 2, 2);
+  transition: all 0.3s ease;
+}
+
+.jhi-details{
+  font-size: 25px;
+  line-height: 30px;
+}
+
+
+
+.eye-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.anchor-button{
+  text-decoration: none;
+}
+
+.job-image{
+  width: 200px;
+  margin: 0 auto;
+  border: solid black 2px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  display: flex;
+  width: 400px;
+  margin: auto auto;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 800px) 
+{
+
+  .form-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+  }
+
+
+  .page-title
+  {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .page-title-border-container
+  {
+    width: 20%;
+    margin-left: 40%;
+  }
+
+  .page-title-border
+  {
+    width: 100%;
+  }
+
+  .form-title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .jhi-details{
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .label{
+    font-size: 17px;
+    padding-top: 10px;
+  }
+
+  .logo{
+    width: 230px;
+    height: 80px;
+}
+}

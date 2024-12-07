@@ -1,0 +1,24 @@
+.chartApp{
+    width:24%;
+    border-bottom: 1px solid rgba(72, 94, 144, 0.16);
+    box-shadow: 0px 0px 5px 0px rgb(71 95 123 / 50%);
+    background-color: white;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .chartApp{
+        width:230px; /* Adjust the container width for smaller screens */
+        margin-bottom: 20px;
+        margin: 20px auto;
+    }
+  }
+
+.pieTitle{
+    text-align: center;
+    color : #4d4e4e;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: white;
+}

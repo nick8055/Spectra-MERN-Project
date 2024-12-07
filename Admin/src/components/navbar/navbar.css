@@ -1,0 +1,109 @@
+/* *{
+    outline: red 1px solid;
+} */
+
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    border-bottom: 0.1px solid rgb(206, 206, 206);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo{
+    width: 400px;
+}
+
+.navbar-button{
+    position: absolute;
+    right:30px;
+    top: 30px;
+    height: 40px;
+    width: 70px;
+    font-size: 30px;
+    border-style: none;
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #3b3b3b;
+}
+
+.navbar-button:hover{
+    color: rgb(175, 2, 2);
+    transition: all 0.3s ease;
+}
+
+.navbar-userbox{
+    position:fixed;
+    right: 110px;
+    top:-210px;
+    height: 170px;
+    width: 200px;
+    transition: all 0.3s ease;
+    background-color: white;
+    border: 2px solid rgb(206, 206, 206);
+    z-index: 100;
+}
+
+.navbar-userbox.open{
+    top:35px;
+    z-index: 100;
+}
+
+.username{
+    padding-top:20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.logout-button{
+    position: absolute;
+    top: 90px;
+    width: 50%;
+    margin-left: 25%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgb(33, 33, 33);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover{
+    border-color: rgb(175, 2, 2);
+    transition: all 0.3s ease;
+    color: rgb(175, 2, 2);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+
+    .navbar-button{
+        right: 0px;
+    }
+
+    .navbar-logo{
+        width: 230px;
+        height: 80px;
+    }
+
+    .navbar-userbox{
+        position: absolute;
+        right: auto;
+        left: auto;
+    }
+
+    .navbar-userbox.open{
+        top:105px;
+    }
+
+}
