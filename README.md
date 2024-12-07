@@ -1,0 +1,1 @@
+The 'node_modules' folder has been removed from all the three (Server, Admin and Student). When you pull this repository into your local machine, make sure to perform 'npm install' command in each and every folder using the command prompt.
