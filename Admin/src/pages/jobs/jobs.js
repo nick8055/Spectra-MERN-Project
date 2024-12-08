@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import './jobs.css';
+
 const JobList = () => {
 
     const currentYear = new Date().getFullYear();
@@ -41,7 +43,7 @@ const JobList = () => {
             <div className='item-list'>
                 {jobs.map(job => (
                     <div key={job._id}
-                    className={`hack-item ${isExpired(job.application_deadline) ? 'expired' : 'active'}`}>
+                    className={`job-item ${isExpired(job.application_deadline) ? 'expired' : 'active'}`}>
                         <Link className='link' to={`/edit_job/${job._id}`}>
                             {job.position} at {job.company_name} - {job.batch !== 1 ? job.batch + ' Batch' : 'All batches'}  - DL {formatDateForInput(job.application_deadline)}
                         </Link>
