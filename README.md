@@ -1,6 +1,6 @@
 * The 'node_modules' folder has been removed from all the three folders (Server, Admin and Student). When you pull this repository into your local machine, make sure to perform 'npm install' command in each and every folder using the command prompt.
 
-* The Repository contains three folders - Admin, Student and Server. The former two are the react client apps, while the latter is the backend. All the three have .env files. Therefore, modify the env variables accordingly to deploy the app.
+* The Repository contains three folders - Admin, Student and Server. The former two are the react client apps, while the latter is the backend server (ExpressJS). All the three have .env files. Therefore, modify the env variables accordingly to deploy the app.
 
 * Kindly change the email ID and email Password values stored in the env file of 'Server'. These credentials are used to facilitate NODEMAILER to send emails or OTPs from the Server. Ensure that the new email credentials are configured to function as NODEMAILER
 
