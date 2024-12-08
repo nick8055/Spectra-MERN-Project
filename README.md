@@ -17,4 +17,4 @@ This file will contain the list of students with their details such as Name, Reg
 
 </p>
 
-<strong>NOTE -> This App will not work in Karunya WiFi, as it doesnt allow any api routes to be processed via the AXIOS library that I used in The front end modules (Admin and Student).</strong>
+<strong><p>NOTE -> This App will not work in Karunya WiFi, as it doesnt allow any api routes to be processed via the AXIOS library that I used in The front end modules (Admin and Student).</p></strong>
