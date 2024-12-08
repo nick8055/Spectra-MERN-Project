@@ -10,3 +10,5 @@
 
 * Excel file containing list of student details <br/>
 This file will contain the list of students with their details such as Name, Reg No and kmail ID. This file is then uploaded into the Admin Portal by the Admin, and the backend server will then send a registration link to the enlisted students via their kmail IDs, which they can use to register an account in the Student Portal. Do not change the attribute names of this excel sheet, as the server looks out for those specific attribute names.
+
+NOTE -> This App will not work in Karunya WiFi, as it doesnt allow any api routes to be processed via the AXIOS library that I used in The front end modules (Admin and Student).
