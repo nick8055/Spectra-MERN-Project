@@ -2,6 +2,8 @@
 
 * The Repository contains three folders - Admin, Student and Server. The former two are the react client apps, while the latter is the backend server (ExpressJS). All the three have .env files. Therefore, modify the env variables accordingly to deploy the app.
 
+* When modifying or creating env variables for the React Apps, ensure to add the prefix REACT_APP_ to the name of the variable.
+
 * Kindly change the email ID and email Password values stored in the env file of 'Server'. These credentials are used to facilitate NODEMAILER to send emails or OTPs from the Server. Ensure that the new email credentials are configured to function as NODEMAILER
 
 * All The OTPs are generated and sent only to emails, not phone numbers. This is because the SMS function has been temporarily disabled, since it requires a 3rd party app that can send SMS to all numbers. One example 3rd party service is called TWILIO. This one requires a subscription, in order to to send SMS to any phone number. By default, you can only send SMS to the number registered in the TWILIO account.
