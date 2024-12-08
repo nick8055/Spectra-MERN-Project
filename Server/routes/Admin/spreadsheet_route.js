@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Nodemailer transport configuration
 const transporter = nodemailer.createTransport
@@ -25,13 +27,23 @@ router.post('/send-emails', (req, res) =>
 
     const emailPromises = students.map((student) => 
     {
-        const mailOptions = 
-        {
+        const mailOptions = {
             from: process.env.EMAIL,
             to: student.email,
             subject: 'Registration Link for SPECRTA STUDENT PORTAL AIML',
-            text: `Dear ${student.name},\n\nPlease complete your registration using the following link:\n\nhttp://localhost:3001/signup?regNo=${student.regNo}&name=${encodeURIComponent(student.name)}&email=${encodeURIComponent(student.email)}\n\nThank you,\nDr. J Dinesh Peter\nProfessor and Head\nDivision of AIML`
+            html: `
+                <p>Dear <strong>${student.name}</strong>,</p>
+                <p>Please complete your registration using the following link:</p>
+                <p>
+                    <a href="${process.env.STUDENT_APP_URL}/signup?regNo=${student.regNo}&name=${encodeURIComponent(student.name)}&email=${encodeURIComponent(student.email)}" style="color: blue; text-decoration: underline;">
+                        Complete Registration
+                    </a>
+                </p>
+                <p>Thank you,</p>
+                <p>Dr. J Dinesh Peter<br>Professor and Head<br>Division of AIML</p>
+            `
         };
+        
 
         return transporter.sendMail(mailOptions);
     });
